@@ -21,7 +21,7 @@ const ProfileBanner = ({data,totalAmount,totalPayments}) => {
                   <p>{data.bio?data.bio:"-"}</p>
                   <div className='flex gap-2'>
                     <p>{totalPayments} contributions</p>
-                    <p>₹{totalAmount} raised</p>
+                    <p>&#8377;{totalAmount} raised</p>
                   </div>
             </div>
         </div>

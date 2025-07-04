@@ -85,19 +85,19 @@ const PaymentPage = ({data}) => {
       </form>
       <div className='w-full flex justify-between'>
         <button onClick={()=>{setAmount(25)}} type="button" className="text-white bg-blue-700/25 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            Pay ₹25
+            Pay &#8377;25
         </button>
         <button onClick={()=>{setAmount(50)}} type="button" className="text-white bg-blue-700/25 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            Pay ₹50
+            Pay &#8377;50
         </button>
         <button onClick={()=>{setAmount(75)}} type="button" className="text-white bg-blue-700/25 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            Pay ₹75
+            Pay &#8377;75
         </button>
         <button onClick={()=>{setAmount(100)}} type="button" className="text-white bg-blue-700/25 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            Pay ₹100
+            Pay &#8377;100
         </button>
         <button onClick={()=>{setAmount(150)}} type="button" className="text-white bg-blue-700/25 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            Pay ₹150
+            Pay &#8377;150
         </button>
       </div>
       </div>

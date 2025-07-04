@@ -8,7 +8,7 @@ const ProfileSupportMessages = ({topPayments}) => {
       {topPayments.map((payment)=>(
         <div className='flex gap-1 items-center'>
           <img className='w-[40px] h-[40px] rounded-full' src={"/avatar.gif"}/>
-          <p className='truncate w-full '>{payment.senderName} donated ₹{payment.amount} with a message "{payment.message}"</p>
+          <p className='truncate w-full '>{payment.senderName} donated &#8377;{payment.amount} with a message &quot;{payment.message}&quot;</p>
         </div>
       ))}
       {/* <div className='flex gap-1 items-center'>
