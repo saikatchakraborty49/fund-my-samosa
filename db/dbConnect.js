@@ -1,6 +1,5 @@
 import mongoose from 'mongoose'
 
-require('dotenv').config();
 
 function dbConnect(){
     mongoose.connect("mongodb+srv://saikatchakraborty416:Xejx2jbf5w0KzXMO@cluster0.b5vql.mongodb.net/fundMySamosa", {
