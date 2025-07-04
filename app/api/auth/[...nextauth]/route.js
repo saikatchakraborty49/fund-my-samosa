@@ -33,6 +33,7 @@ const authOptions=NextAuth({
     }),
 
   ],
+  secret: process.env.AUTH_SECRET,
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
       // console.log("User:", user);
