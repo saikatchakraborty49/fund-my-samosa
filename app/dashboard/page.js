@@ -9,7 +9,6 @@ import { apiConnector } from "@/services/apiConnector";
 
 const Dashboard = () => {
   const { data: session, status } = useSession();
-  console.log(session);
   const router = useRouter();
 
   const [dataLoaded, setDataLoaded] = useState(false);
@@ -106,25 +105,25 @@ const Dashboard = () => {
       <h2 className="text-xl font-semibold mb-4">Welcome to Dashboard</h2>
       <form className="space-y-6 flex flex-col items-center w-full max-w-xl relative">
         {/* Name */}
-        <div>
+        <div className="w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Name</label>
-          <input disabled {...register("name")} className="border p-2 rounded w-[500px]" />
+          <input disabled {...register("name")} className="border p-2 rounded w-full" />
         </div>
 
         {/* Username */}
-        <div>
+        <div className="w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Username</label>
-          <input disabled {...register("userName")} className="border p-2 rounded w-[500px]" />
+          <input disabled {...register("userName")} className="border p-2 rounded w-full" />
         </div>
 
         {/* Email */}
-        <div>
+        <div className="w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Email</label>
-          <input disabled {...register("email")} className="border p-2 rounded w-[500px]" />
+          <input disabled {...register("email")} className="border p-2 rounded w-full" />
         </div>
 
         {/* Profile Picture */}
-        <div className="relative w-[500px]">
+        <div className="relative w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Profile Picture</label>
           <input
             disabled={!editpp}
@@ -146,7 +145,7 @@ const Dashboard = () => {
         </div>
 
         {/* Profile Banner */}
-        <div className="relative w-[500px]">
+        <div className="relative w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Profile Banner</label>
           <input
             disabled={!editBanner}
@@ -168,7 +167,7 @@ const Dashboard = () => {
         </div>
 
         {/* Razorpay ID */}
-        <div className="relative w-[500px]">
+        <div className="relative w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Razorpay ID</label>
           <input
             disabled={!editrid}
@@ -190,7 +189,7 @@ const Dashboard = () => {
         </div>
 
         {/* Razorpay Secret */}
-        <div className="relative w-[500px]">
+        <div className="relative w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Razorpay Secret</label>
           <input
             disabled={!editrs}
@@ -212,7 +211,7 @@ const Dashboard = () => {
         </div>
 
         {/* Bio */}
-        <div className="relative w-[500px]">
+        <div className="relative w-[90vw] lg:w-[500px]">
           <label className="text-sm font-medium mb-1 block">Bio</label>
           <textarea
             rows={3}
@@ -233,8 +232,6 @@ const Dashboard = () => {
             <MdEdit />
           </button>
         </div>
-
-        
 
         {/* Save Button */}
         <button

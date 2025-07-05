@@ -13,7 +13,7 @@ const ProfileBanner = ({data,totalAmount,totalPayments}) => {
           <div className='relative w-screen'>
 
             <img className='object-fill w-screen' src={BannerLink}/> 
-            <div className='z-10 border-4 border-blue-800 rounded-full w-[125px] h-[125px] absolute bottom-0 translate-y-[50%] left-[50%] -translate-x-[50%]'>
+            <div className='z-10 border-4 bg-white border-blue-800 rounded-full w-[125px] h-[125px] absolute bottom-0 translate-y-[50%] left-[50%] -translate-x-[50%]'>
                 <img className='w-full h-full rounded-full' src={ProfilePic}/>
             </div>
             <div className='absolute -bottom-[135px] left-[50%] -translate-x-[50%] flex flex-col items-center justify-center'>    

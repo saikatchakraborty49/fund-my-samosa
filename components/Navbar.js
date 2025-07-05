@@ -8,7 +8,7 @@ const Navbar = () => {
   const { data: session } = useSession();
 
   return (
-    <div className="bg-gray-950 flex justify-between items-center px-4 py-2">
+    <div className="bg-gray-950 flex flex-col md:flex-row justify-between items-center px-4 py-2">
       <div className="logo font-bold text-lg">
         <Link href={"/"}>FundMySamosa!</Link>
       </div>
