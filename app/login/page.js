@@ -14,6 +14,9 @@ const Login = () => {
   }, [status, router]);
 
   return (
+    // <div className='z-0'>
+
+
     <div className='py-14 mx-auto'>
       <h1 className='text-3xl text-center font-bold'>Login To Get Your Fans Support You</h1>
       <div className="flex flex-col gap-2 min-h-screen p-10 items-center">
@@ -71,6 +74,7 @@ const Login = () => {
         </button>
       </div>
     </div>
+    // </div>
   );
 };
 
